@@ -28,9 +28,20 @@ nav>a {
 
 .photo-banner {
     height: 250px;
-    background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: top;
+}
+
+.photo-1 {
+    background-image: url(https://picsum.photos/1000);
+}
+
+.photo-2 {
+    background-image: url(../assets/logo.jpg);
+}
+
+.photo-3 {
+    background-image: url(https://picsum.photos/750);
 }
 
 .article {
@@ -39,10 +50,22 @@ nav>a {
 
 .message-container {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#result {
+    margin: 0px;
 }
 
 footer>div {
     text-align: center;
     font-family: cursive;
     font-size: small;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+    }
 }
